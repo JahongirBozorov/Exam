@@ -19,6 +19,7 @@ def student_add(request):
             name=request.POST.get('name'),
             course=request.POST.get('course'),
             date_time=request.POST.get('date_time'),
+            course_date=request.POST.get('course_date'),
             room=request.POST.get('room'),
             payment=request.POST.get('payment')
 
