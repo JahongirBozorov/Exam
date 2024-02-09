@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update_data</title>
+     <link rel="stylesheet" href="{% static 'css/students_add.css'%}">
+</head>
+<body>
+   <div class="wrapper">
+    <div class="button">
+        <form action="{% url 'uprec' std.id %}" method="post" >
+             {% csrf_token %}
+            <label for="id"></label>
+            <input type="hidden" name="id" id="id" value="{{ std.id }}">
+            <label for="name"></label>
+            <input type="text" placeholder="Ism familiyasi" name="name" id="name" value="{{std.name}}">
+             <label for="course"></label>
+            <input type="text" name="course" id="course"   placeholder="O'quv kursi" value="{{std.course}}">
+            <label for="course_date"></label>
+            <input type="text" name="course_date" id="course_date"   placeholder="Dars vaqti" value="{{std.course_date}}">
+             <label for="date_time"></label>
+            <input type="text" name="date_time" id="date_time" placeholder="kursga qo'shilgan vaqti" value="{{std.date_time}}">
+             <label for="room"></label>
+            <input type="number" name="room"  id="room" placeholder="O'quv xonasi" value="{{std.room}}">
+             <label for="payment"></label>
+            <input type="number" name="payment" id="payment"  placeholder="To'lov summasi" value="{{std.payment}}">
+            <input type="submit" value="yuborish"  class="btn">
+        </form>
+    </div>
+   </div>
+</body>
+</html>

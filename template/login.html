@@ -1,0 +1,23 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn</title>
+    <link rel="stylesheet" href="{% static 'css/logIn.css' %}" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="button">
+        <form method="post">
+             {% csrf_token %}
+            <label for="phoneNumberInput"></label>
+            <input class="logIn" type="text" id="phoneNumberInput" name="phone_number" placeholder="Telefon raqam">
+            <label for="password"></label>
+            <input class="password" type="password"  name="password" id="password"  placeholder="Parol">
+            <input class="btn" type="submit" value="Yuborish">
+        </form>
+    </div>
+</div>
+</body>
+</html>

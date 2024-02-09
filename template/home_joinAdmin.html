@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{ % static 'css/home_joinAdmin.css' %}">
+    <link rel="stylesheet" href="{ % static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' %}"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/home_joinAdmin.css' %}" />
+    
+</head>
+<body>
+    <form method="post">
+     {% csrf_token %}
+<div class="box">
+
+    <div class="wrapper">
+        <a href="./xarajat.html" class="btn_xarajat">
+           <img src="https://www.svgrepo.com/show/287814/clinic-history-paper.svg" alt="">
+        <h3>Xarajatlar</h3>
+        </a>
+        <a href="/student" class="btn_students">
+            <img src="https://avatars.mds.yandex.net/i?id=6e2c3ec98538b790882ce55e7faf528d6076c794-10638002-images-thumbs&n=13" alt="">
+            <h3>O'quvchilar Ro'yxati</h3>
+        </a>
+        <a href="/teacher" class="btn_teachers">
+            <img src="https://avatars.mds.yandex.net/i?id=27b0da3c4a4be264ee7447c6b09ad5e574c1585f-10811798-images-thumbs&n=13" alt="">
+            <h3>Ustozlar Ro'yxati</h3>
+        </a>
+        <a href="./davomat.html" class="btn_davomat">
+         <img src="https://cdn3.iconfinder.com/data/icons/business-office-2/512/calendar_estimate_milestones-1024.png" alt="">
+        <h3>Davomat</h3>
+        </a>
+        <a href="./monitoring.html" class="btn_monitoring">
+            <img src="https://yandex-images.clstorage.net/Gq55K1b45/8eb98aRjM/7NFIYftuAFx8qb2bzq9tWN3dyOd2VBa9Av-zOnQJO7tZmrpUmB4C_LFYzDKWoOb6FyeolFWA7kC1KNeCSi1wob3EADzKYwwhHdi14v-fcXzNoOSSVlUKzErT71Z5WBuyAPqqWH2_3z1c7TDvVi0HGmsqydUkpdtNpIwuhx_gubSIhQQlKzLJuMStyAeCZ2WI0WDAc07dTpBq0xr2lUxqhu1Ta4BR13OxbB3sj0Z978JfarGFNIz3ydxsF1NbZJm8NCnkcTeOwTh8USSrEpO1zFk0OPda5eJ8MkvyBk1cyr6xZ1sImW9LDUgxZPOyOQPms2bB-YwU6-FovNfDP5AdaCQBFHnrthEEnAFMZw5LyVAdZJSb-rkOIMb_6uLJwIpSfSv3GDHbR_10wZgPPu3nuqdObUlQLMfBbMhbk8vwMbB8DXypWz5Z-JA9TPfC83ncdaBYi_KVHtge9ybuqcj2xjUXqzCtd2t1jMHUN95R855Pjn0JGNxrRZD4iw-78OVcALnEYfcGyUyI9czHNo_piOVkrO9GMYZwKoeqfmFAkuLhh9fAEQNDhRxNWOf6iUdCp0rN1XQYaykwRA9nP8jBLAi9yLXvRu2ErH2s7xIPiexl1Ejj9qk6yKY7tqZVzF6KLcvH0DXfD40Y1TyT5vkz8gNq9VEE-GexfOQPy3OUcSjAPXQ1Z7qNQGj1fMcm9_XwYXDU54pdYvzCn4rePcBejnVfp1jJ_88h3MEg90Jhv7aj4t0RaNBXyUion6sf7PFcIFkA9Xc-UUTssdybko_pZHUsGAc-0Y7wbs-KpvEseuqluze43QszqWQ1rPNaaX-yV4ahbdDkb73YODu7S0AtpES10AGz6ilUrHlM6-4nseiNbHQPNg0muMZXYno9_GYOnZfnWFlz4_2IibR73j1HDtu-yWmYgPcZxDgX2ytwiVQguRw50xalNISRqPsi8_0MKWjUg4q5SvjWMx6uKWjU" alt="">
+        <h3>Monitoring</h3>
+        </a>
+        <a href="/register" class="btn_register">
+            <img src="https://avatars.mds.yandex.net/i?id=cfa31f441b5e3e58a1fc3dd1c978f6d8647c6338-10928869-images-thumbs&n=13" alt="">
+            <h3>Foydalanuvchi Qo'shish</h3>
+        </a>
+    </div>
+
+</div>
+ </form>
+</body>
+</html>

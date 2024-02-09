@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update_data</title>
+     <link rel="stylesheet" href="{% static 'css/students_add.css'%}">
+</head>
+<body>
+   <div class="wrapper">
+    <div class="button">
+        <form action="{% url 'teacher_up' tch.id %}" method="post" >
+             {% csrf_token %}
+            <label for="id"></label>
+            <input type="hidden" name="id" id="id" value="{{ tch.id }}">
+            <label for="name"></label>
+            <input type="text" placeholder="Ism familiyasi" name="name" id="name" value="{{tch.name}}">
+             <label for="course"></label>
+            <input type="text" name="course" id="course"   placeholder="O'quv kursi" value="{{tch.course}}">
+             <label for="room"></label>
+            <input type="number" name="room"  id="room" placeholder="O'quv xonasi" value="{{tch.room}}">
+            <input type="submit" value="yuborish"  class="btn">
+        </form>
+    </div>
+   </div>
+</body>
+</html>

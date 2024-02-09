@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+</head>
+<body>
+    <header class="header">
+      <div class="container flex-row flex-between">
+        <div class="div_logo flex-row">
+        <img width="80px" src="https://www.nicepng.com/png/full/869-8690218_text-clipart-opened-book-literary-fiction.png" alt="">
+        <h3>SPEKTOR</h3>
+        </div>
+        <nav class="nav">
+            <ul class="flex-row flex-between">
+                <li class="li_home"><a href="!#">Home</a></li>
+                <li class="li_xarajat"><a href="!#">Xarajatlar</a></li>
+                <li class="li_oquvchi"><a href="!#">O'quvchilar Ro'yxati</a></li>
+                <li class="teachers"><a href="!#">O'qituvchilar Ro'yxati</a></li>
+                <li class="li_monitoring"><a href="!#">Monitoring</a></li>
+            </ul>
+        </nav>
+      </div>
+      <hr>
+      <div style="background-image: url('{% static 'img/home.png'%}'); background-repeat: no-repeat; background-size: 100%;" class="home_page">
+        <p class="text">
+         Hozir saytimiz beta versiyada bo'lganligi uchun xato va kamchiliklar uchun oldindan uzur so'raymiz 
+        </p>
+      <form action="./login">
+           {% csrf_token %}
+            <button class="btn">Boshlash</button>
+      </form>
+      </div>
+    </header>
+</body>
+</html>

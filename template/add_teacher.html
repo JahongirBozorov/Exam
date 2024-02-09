@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_student</title>
+    <link rel="stylesheet" href="{% static 'css/students_add.css'%}">
+</head>
+<body>
+   <div class="wrapper">
+    <div class="button">
+        <form action="add_teacher" method="post">
+             {% csrf_token %}
+            <label for="name"></label>
+            <input type="text" placeholder="Ism familiyasi" name="name" id="name">
+             <label for="course"></label>
+            <input type="text" name="course" id="course"   placeholder="O'quv kursi">
+             <label for="room"></label>
+            <input type="number" name="room"  id="room" placeholder="O'quv xonasi">
+            <input type="submit" value="yuborish"  class="btn">
+        </form>
+    </div>
+   </div>
+</body>
+</html>
