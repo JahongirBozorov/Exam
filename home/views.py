@@ -38,7 +38,6 @@ def login(request):
         if user:
             auth_login(request, user)
             # set user-specific data in the session
-            request.session['phone_number'] = user.phone_number
             if user.is_superuser:
                 return redirect('home_admin',)
             return redirect('home',)
