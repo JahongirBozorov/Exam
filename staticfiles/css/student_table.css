@@ -1,0 +1,25 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+table{
+    width: 1300px;
+    margin: 0 auto;
+}
+ td, th{
+border: 1px solid black;
+}
+.btn{
+border: none;
+}
+
+button{
+border: none;
+color: white;
+background-color: green;
+padding: 4px 10px;
+border: none;
+
+}
